@@ -20,8 +20,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        findViewById(R.id.imageButton).setOnClickListener(v -> navigate(CandidatosData.pinar));
-        findViewById(R.id.imageButton2).setOnClickListener(v -> navigate(CandidatosData.habana));
+
     }
 
     private void navigate(ArrayList<Candidato> candidatoList) {
