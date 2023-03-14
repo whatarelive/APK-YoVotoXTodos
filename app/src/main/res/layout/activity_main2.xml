@@ -45,20 +45,20 @@
                     app:srcCompat="@drawable/pinar" />
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="135dp"
-                    android:layout_height="120dp"
-                    android:background="@android:drawable/divider_horizontal_bright"
-                    android:contentDescription="@string/boton5"
-                    app:srcCompat="@drawable/habana" />
-
-                <ImageButton
                     android:id="@+id/imageButton3"
                     android:layout_width="135dp"
                     android:layout_height="120dp"
                     android:background="@android:drawable/divider_horizontal_bright"
                     android:contentDescription="@string/boton6"
                     app:srcCompat="@drawable/artemisa" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="135dp"
+                    android:layout_height="120dp"
+                    android:background="@android:drawable/divider_horizontal_bright"
+                    android:contentDescription="@string/boton5"
+                    app:srcCompat="@drawable/habana" />
             </TableRow>
 
             <TableRow
@@ -76,20 +76,20 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/text_wiew5"
-                    android:textColor="@color/white"
-                    android:textSize="16sp" />
-
-                <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/text_wiew6"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_wiew5"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
             </TableRow>

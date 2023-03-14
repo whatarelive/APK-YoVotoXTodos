@@ -3,16 +3,16 @@ package com.example.yovotoxtodos.models;
 public class Candidato {
     private String image;
     private String name;
-    private String biografia;
     private int age;
     private String cargo;
+    private String biografia;
 
-    public Candidato(String image, String name, String biografia, int age, String cargo) {
+    public Candidato(String image, String name, int age, String cargo,String biografia) {
         this.image = image;
         this.name = name;
-        this.biografia = biografia;
         this.age = age;
         this.cargo = cargo;
+        this.biografia = biografia;
     }
 
     public String getImage() {
@@ -23,10 +23,6 @@ public class Candidato {
         return name;
     }
 
-    public String getBiografia() {
-        return biografia;
-    }
-
     public int getAge() {
         return age;
     }
@@ -35,14 +31,19 @@ public class Candidato {
         return cargo;
     }
 
+    public String getBiografia() {
+        return biografia;
+    }
+
+
     @Override
     public String toString() {
         return "Candidato{" +
                 "image='" + image + '\'' +
                 ", name='" + name + '\'' +
-                ", biografia='" + biografia + '\'' +
                 ", age=" + age +
                 ", cargo='" + cargo + '\'' +
+                ", biografia='" + biografia + '\'' +
                 '}';
     }
 }
