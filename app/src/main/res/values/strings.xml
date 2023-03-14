@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">#YoVotoXTodos</string>
+    <string name="text">Nombre y Apellidos</string>
+    <string name="text2">Provincia</string>
+    <string name="boton1">Iniciar</string>
+
+    <string name="text_wiew3">Provincias</string>
+    <string name="text_wiew4">Pinar del Rio</string>
+    <string name="boton4">pinar</string>
+    <string name="text_wiew5">La Habana</string>
+    <string name="boton5">habana</string>
+    <string name="text_wiew6">Artemisa</string>
+    <string name="boton6">artemisa</string>
+    <string name="text_wiew7">Mayabeque</string>
+    <string name="boton7">mayabeque</string>
+    <string name="text_wiew8">Isla de la Juventud</string>
+    <string name="boton8">la isla</string>
+    <string name="text_wiew9">Matanzas</string>
+    <string name="boton9">matanzas</string>
+    <string name="text_wiew10">Villa Clara</string>
+    <string name="boton10">villa</string>
+    <string name="text_wiew11">Cienfuegos</string>
+    <string name="boton11">cienfuegos</string>
+    <string name="text_wiew12">Santi Spiritus</string>
+    <string name="boton12">santi spiritus</string>
+    <string name="text_wiew13">Ciego de Avila</string>
+    <string name="boton13">ciego de avila</string>
+    <string name="text_wiew14">Camaguey</string>
+    <string name="boton14">camaguey</string>
+    <string name="text_wiew15">Las Tunas</string>
+    <string name="boton15">las tunas</string>
+    <string name="text_wiew16">Holguin</string>
+    <string name="boton16">holguin</string>
+    <string name="text_wiew17">Granma</string>
+    <string name="boton17">granma</string>
+    <string name="text_wiew18">Santiago de Cuba</string>
+    <string name="boton18">santiago de cuba</string>
+    <string name="text_wiew19">Guantanamo</string>
+    <string name="boton19">guantanamo</string>
+
+    <string name="text_view">Municipio:</string>
+    <string name="text_view2">Diputados</string>
+
+</resources>
