@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private EditText jv_nombre, jv_provincia;
-    private ImageView jv_logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,30 +21,31 @@ public class MainActivity extends AppCompatActivity {
 
         jv_nombre = (EditText) findViewById(R.id.Text_nombre);
         jv_provincia = (EditText) findViewById(R.id.Text_provincia);
-        jv_logo = (ImageView) findViewById(R.id.Img_logo);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
+        findViewById(R.id.inicio).setOnClickListener(v -> Inicio());
     }
 
-    public void Inicio(View view) {
+    public void Inicio() {
         String nombre = jv_nombre.getText().toString();
         String provincia = jv_provincia.getText().toString();
 
-        if(nombre.equals("") && provincia.equals("")){
+        if(!nombre.equals("") && !provincia.equals("")){
             Intent intent = new Intent(this, MainActivity2.class);
             intent.putExtra("Nombre", nombre);
             intent.putExtra("Provincia", provincia);
             startActivity(intent);
             finish();
         } else {
-            Toast.makeText(this, "Ingrese el dato faltante", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Ingrese el dato faltante", Toast.LENGTH_LONG).show();
 
            if (nombre.equals("")){
                jv_nombre.requestFocus();
                InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
                imm.showSoftInput(jv_nombre, InputMethodManager.SHOW_IMPLICIT);
-           } else if (provincia.equals("")) {
+           } else {
                jv_provincia.requestFocus();
                InputMethodManager imm = (InputMethodManager) getSystemService(this.INPUT_METHOD_SERVICE);
                imm.showSoftInput(jv_provincia, InputMethodManager.SHOW_IMPLICIT);
@@ -55,6 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
+        finish();
     }
 }
