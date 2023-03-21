@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".LaHabanaActivity">
+    tools:context=".CandidatosProvinciaActivity">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="404dp"
         android:layout_height="540dp"
         android:layout_marginStart="1dp"

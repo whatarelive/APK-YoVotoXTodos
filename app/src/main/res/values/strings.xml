@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">#YoVotoXTodos</string>
     <string name="text">Nombre y Apellidos</string>
-    <string name="text2">Provincia</string>
+    <string name="provincia">Provincia</string>
     <string name="boton1">Iniciar</string>
 
     <string name="text_wiew3">Provincias</string>
@@ -38,7 +38,10 @@
     <string name="text_wiew19">Guantanamo</string>
     <string name="boton19">guantanamo</string>
 
-    <string name="text_view">Municipio:</string>
+    <string name="municipio">Municipio:</string>
     <string name="text_view2">Diputados</string>
+    <string name="edad">Edad:</string>
+    <string name="cargo">Cargo:</string>
+    <string name="biografia">Biografia:</string>
 
 </resources>

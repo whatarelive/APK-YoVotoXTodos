@@ -1,14 +1,10 @@
 package com.example.yovotoxtodos.models;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class CandidatosData {
-    public enum Province {
-        PRI, LHA, ART, MAY, IJV, MTZ, VCL, CFG, CMG, LTU, HOL, GRA, SCU, GTM
-    }
-
-    List<Candidato> pinar = Arrays.asList(
+    public static ArrayList<Candidato> pinar = new ArrayList<>(Arrays.asList(
             new Candidato("drawable/diputados/pinar/p1.png", "Zulema Corrales Aroche",    59, "Enfermera","Enfermera, dirigente de la UJC a nivel de base. Cumplió misión internacionalista en Etiopía como enfermera militar. Cumplió misión en Venezuela. Dirigente sindical de base. Ha participado en congresos de la UJC y la CTC y ha recibido varias condecoraciones. Ha sido delegada de circunscripción en el consejo popular de Las Martinas. Enfermera del Consultorio 9. Policlínico Manuel Lazo." ),
             new Candidato("drawable/diputados/pinar/p2.png", "Caridad del Rosario Diego Bello",    67, "Jefa de la Oficina Atencion a los Asuntos Religiosos del Comite Central del PCC","Dirigente estudiantil y de la UJC. Fue funcionaria del Departamento de Educación, Ciencia y Deportes del Comité Central del PCC y desde 1993 jefa de la Oficina de Atención a los Asuntos Religiosos. Es miembro del Comité Central desde el 4to. Congreso del PCC y fue delegada a la Primera Conferencia Nacional. Es diputada desde 1998." ),
             new Candidato("drawable/diputados/pinar/p3.png", "Clara Ondina Batista Cruz",    54, "Jefa del Departamento del Registro del Ministerio de la Agricultura","Ha transitado desde técnica en la Unidad Silvícola Río Mantua hasta directora de la Oficina de la Tierra. Ha sido miembro del Comité Municipal del Partido e integrante no profesional del Buró. Fue delegada al 7mo. Congreso del PCC. Fue reelegida delegada de circunscripción. Es Jefa de Departamento del Registro Agropecuario del Ministerio de la Agricultura." ),
@@ -47,10 +43,10 @@ public class CandidatosData {
             new Candidato("drawable/diputados/pinar/p31.png", "Ruben Ramos Moreno",    49, "Gobernador de la provincia de Pinar del Río.","Comienza su actividad laboral en 1997 como adiestrado en la Empresa de Tabaco del Municipio Mantua, donde posteriormente es promovido a Jefe de Taller, Jefe de Departamento Técnico, hasta llegar a ocupar el cargo de Director.\n" +
                     "En el 2002 resultó electo Vicepresidente de la Asamblea Municipal del Poder Popular en Mantua y posteriormente, Presidente. A partir del 2013 ocupa los cargos de Vicepresidente del Consejo de la Administración Provincial y Director de Organización, Planificación e Información. En el 2019 es promovido a Vicepresidente para el Órgano de la Administración Provincial en Pinar del Río.\n" +
                     "Ha recibido diferentes cursos, de superación política en la Escuela Provincial del Partido y en la Superior Ñico López, en Defensa Territorial del nivel Provincial, así como el Diplomado en Administración Pública.\n" +
-                    "Actualmente es el Gobernador de la provincia de Pinar del Río." ));
+                    "Actualmente es el Gobernador de la provincia de Pinar del Río." )));
 
 
-    List<Candidato> artemisa =Arrays.asList(
+    public static ArrayList<Candidato> artemisa = new ArrayList<>( Arrays.asList(
             new Candidato("drawable/diputados/artemisa/art1.png", "Ramiro Valdés Menéndez",    90, "Comandante de la Revolución. Vice primer ministro","Asaltante al Cuartel Moncada, expedicionario del Granma, combatiente del Ejército Rebelde, fue ascendido al grado de Comandante. Al triunfo de la Revolución, Segundo Jefe de La Cabaña, Jefe Militar en la región central, jefe de los órganos de la Seguridad del Estado. Fue Ministro del Interior, viceministro primero de las FAR, ayudante del Comandante en Jefe, vice primer ministro a cargo del Sector de la Construcción, ministro de la Informática y las Comunicaciones y vicepresidente de los Consejos de Estado y de Ministros. Es miembro fundador del Comité Central del Partido y de su Buró Político. Ha cumplido importantes misiones de carácter oficial, político y económico, como la búsqueda, ubicación, exhumación y traslado a Cuba de los restos del Che y sus compañeros en Bolivia. Es Héroe de la República de Cuba.\n" +
                     "Actualmente es Vice primer ministro" ),
             new Candidato("drawable/diputados/artemisa/art2.png", "Maria Mercedes Cordero Diaz",    50, "Jefa de la Unidad de Trabajo Social del Consejo de la Administración Municipal.","Licenciada en Educación Primaria. Fue cuadro de la UJC como funcionaria para atender la Organización de Pioneros. Fue miembro del Comité Municipal de la UJC. Atendió el Programa de los Trabajadores Sociales como Jefa del Frente y Organización. Ha sido delegada durante tres mandatos. Jefa de la Unidad de Trabajo Social del Consejo de la Administración Municipal." ),
@@ -88,11 +84,11 @@ public class CandidatosData {
                     "Ha cursado los Diplomados en Seguridad y Defensa Nacional y en Dirección y Gestión Empresarial. \n" +
                     "Actualmente, es el Gobernador de la provincia de Artemisa." ),
             new Candidato("drawable/diputados/artemisa/art25.png", "Margarita Soroa Valdes",    59, "Presidenta de la Asamblea Municipal del Poder Popular de San Cristóbal. ","Ocupó diferentes cargos en el sector de la Educación. Ha sido presidenta de CDR y organizadora de la FMC. Máster en Ciencias de la Educación, ha sido miembro no profesional del Buró Municipal y Provincial del Partido. En el 2011 asumió el cargo de vicepresidenta de la Asamblea Municipal del Poder Popular. \n" +
-                    "Actualmente, es la Presidenta de la Asamblea Municipal del Poder Popular de San Cristóbal. " ));
+                    "Actualmente, es la Presidenta de la Asamblea Municipal del Poder Popular de San Cristóbal. " )));
 
 
 
-    List<Candidato> habana =Arrays.asList(
+    public static ArrayList<Candidato> habana = new ArrayList<>( Arrays.asList(
             new Candidato("drawable/diputados/habana/a1.png", "Pepe",    20, "algo","aaaaaa" ),
 
             new Candidato("drawable/diputados/habana/a2.png", "Pepe",    20, "algo","aaaaaa" ),
@@ -233,5 +229,5 @@ public class CandidatosData {
             new Candidato("drawable/diputados/habana/a98.png", "Pepe",    20, "algo","aaaaaa" ),
             new Candidato("drawable/diputados/habana/a99.png", "Pepe",    20, "algo","aaaaaa" ),
             new Candidato("drawable/diputados/habana/a100.png", "Pepe",    20, "algo","aaaaaa" ),
-            new Candidato("drawable/diputados/habana/a101.png", "Pepe",    20, "algo","aaaaaa" ));
+            new Candidato("drawable/diputados/habana/a101.png", "Pepe",    20, "algo","aaaaaa" )));
 }
