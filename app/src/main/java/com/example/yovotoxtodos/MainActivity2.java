@@ -21,8 +21,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         findViewById(R.id.imageButton).setOnClickListener(v -> navigate(CandidatosData.pinar));
-        findViewById(R.id.imageButton2).setOnClickListener(v -> navigate(CandidatosData.artemisa));
-        findViewById(R.id.imageButton3).setOnClickListener(v -> navigate(CandidatosData.habana));
+        findViewById(R.id.imageButton3).setOnClickListener(v -> navigate(CandidatosData.artemisa));
+        findViewById(R.id.imageButton2).setOnClickListener(v -> navigate(CandidatosData.habana));
         findViewById(R.id.imageButton4).setOnClickListener(v -> navigate(CandidatosData.mayabeque));
         findViewById(R.id.imageButton5).setOnClickListener(v -> navigate(CandidatosData.isla));
         findViewById(R.id.imageButton6).setOnClickListener(v -> navigate(CandidatosData.matanzas));
