@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.yovotoxtodos.models.Candidato;
@@ -20,6 +21,9 @@ public class DiputadoBioActivity extends AppCompatActivity {
         if (extras != null) {
             candidato = extras.getParcelable("diputado");
         }
+
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setImageDrawable(candidato.getImage(getBaseContext()));
 
         TextView name = findViewById(R.id.name);
         name.setText(candidato.getName());

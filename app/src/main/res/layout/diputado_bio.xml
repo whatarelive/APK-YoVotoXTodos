@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,16 +8,23 @@
     android:background="@drawable/fondo"
     tools:context=".DiputadoBioActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"
-        android:layout_marginLeft="18dp"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -24,6 +32,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         tools:text="Pepe"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:textColor="@color/white"
@@ -38,13 +48,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         android:text="@string/edad"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@id/imageView"
         app:layout_constraintTop_toBottomOf="@id/name"
-        android:layout_marginLeft="16dp" />
+        />
 
     <TextView
         android:id="@+id/age_value"
@@ -54,10 +66,12 @@
         android:background="@android:drawable/screen_background_dark_transparent"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         tools:text="0"
         app:layout_constraintStart_toEndOf="@id/age_text"
         app:layout_constraintTop_toTopOf="@id/age_text"
-        android:layout_marginLeft="8dp" />
+        />
 
 
     <TextView
@@ -65,10 +79,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
         android:layout_marginTop="21dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:text="@string/cargo"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,32 +99,36 @@
         android:background="@android:drawable/screen_background_dark_transparent"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         app:layout_constraintStart_toEndOf="@id/cargo_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/cargo_text"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="8dp" />
+        />
 
     <TextView
         android:id="@+id/bio_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:text="@string/biografia"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cargo_text" />
+        app:layout_constraintTop_toBottomOf="@id/cargo_value" />
 
     <TextView
         android:id="@+id/bio_value"
-        android:layout_width="396dp"
-        android:layout_height="350dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="4dp"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -117,5 +136,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bio_text"
         tools:text="Biografia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

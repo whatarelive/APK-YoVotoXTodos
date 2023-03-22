@@ -40,7 +40,7 @@ public class CandidatosAdapter extends RecyclerView.Adapter<CandidatosAdapter.Vi
     public void onBindViewHolder(@NonNull CandidatosAdapter.ViewHolder holder, int position) {
         Candidato candidato = candidatoList.get(position);
         Log.i("TAG", "onBindViewHolder: " + position + " = " + candidato);
-        //holder.imageView.setImageDrawable(candidato.getImage(context));
+        holder.imageView.setImageDrawable(candidato.getImage(context));
         holder.textView.setText(candidato.getName());
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, DiputadoBioActivity.class);

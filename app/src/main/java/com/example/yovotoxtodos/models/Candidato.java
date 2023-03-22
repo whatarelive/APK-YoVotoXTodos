@@ -6,6 +6,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 
 import java.io.Serializable;
 
@@ -46,7 +47,7 @@ public class Candidato implements Parcelable {
 
     public Drawable getImage(Context context) {
         int resourceId = context.getResources().getIdentifier(image, "drawable", context.getPackageName());
-        return context.getResources().getDrawable(resourceId);
+        return ContextCompat.getDrawable(context, resourceId);
     }
 
     public String getName() {
