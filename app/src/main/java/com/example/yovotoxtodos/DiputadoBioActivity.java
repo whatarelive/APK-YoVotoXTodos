@@ -16,14 +16,10 @@ public class DiputadoBioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diputado_bio);
 
-
-
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             candidato = extras.getParcelable("diputado");
         }
-
-        Log.i("DiputadoTAG", "onCreate: " + candidato);
 
         TextView name = findViewById(R.id.name);
         name.setText(candidato.getName());

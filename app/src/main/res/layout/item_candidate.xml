@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/purple_700">
+    android:background="@android:drawable/screen_background_dark_transparent">
 
     <ImageView
         android:id="@+id/image"
@@ -14,7 +14,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -28,7 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

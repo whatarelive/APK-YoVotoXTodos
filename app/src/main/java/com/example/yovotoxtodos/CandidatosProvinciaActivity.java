@@ -20,7 +20,7 @@ public class CandidatosProvinciaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.la_habana);
+        setContentView(R.layout.activity_province);
 
         ArrayList<Candidato> candidatoList = new ArrayList<>();
 
@@ -28,8 +28,6 @@ public class CandidatosProvinciaActivity extends AppCompatActivity {
         if (extras != null) {
             candidatoList = extras.getParcelableArrayList("province");
         }
-
-        Log.i("TAG", "onCreate: " + candidatoList.size());
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         CandidatosAdapter adapter = new CandidatosAdapter(candidatoList, getBaseContext());
